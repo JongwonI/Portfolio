@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/jquery-3.6.2.min.js"></script>
+    <script src="script/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script/script.js"></script>
+    <title>한국도로공사</title>
+</head>
+<body>
+    <div id="header">
+        <div class="header">
+            <ul class="logo">
+                <li><a href="#"><img src="images/icon/header/w_logo.png" alt="이미지없음"></a></li>
+                <li>
+                    <p><img src="images/icon/header/w_callcenter.png" alt="이미지없음"></p>
+                    <p>24시간 콜센터<br>
+                        1588-2504</p>
+                </li>
+                <li>
+                    <select name="language" id="language">
+                        <option value="">언어/Language</option>
+                        <option value="한글">한글</option>
+                        <option value="영어">English</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+        <div class="gnb_wrap">
+            <ul class="gnb">
+                <li></li>
+                <li><a href="#">공사소개</a><div class="gbox"></div></li>
+                <li><a href="#">정보공개</a><div class="gbox"></div></li>
+                <li><a href="#">국민참여</a><div class="gbox"></div></li>
+                <li><a href="#">고속도로</a><div class="gbox"></div></li>
+                <li><a href="#">신기술</a><div class="gbox"></div></li>
+                <li><a href="#">열린경영</a><div class="gbox"></div></li>
+            </ul>
+        </div>
+        <div class="gnb_over_wrap g1">
+            <div class="gow_1">
+                <p>공사소개</p>
+                <img src="images/icon/header/cha_1.png" alt="이미지없음">
+            </div>
+            <div class="gow_2">
+                <ul class="gow_sub">
+                    <li><a href="#">사장</a></li>
+                </ul>
+                <ul class="gow_sub">
+                    <li><a href="#">일반현황</a></li>
+                    <li><a href="#">-조직,경영진</a></li>
+                    <li><a href="#">-비전 및 전략체계</a></li>
+                    <li><a href="#">-연혁</a></li>
+                    <li><a href="#">-찾아오시는길</a></li>
+                </ul>
+                <ul class="gow_sub">
+                    <li><a href="#">채용정보</a></li>
+                    <li><a href="#">-도공인</a></li>
+                    <li><a href="#">-NCS채용</a></li>
+                    <li><a href="#">-인재육성제도</a></li>
+                    <li><a href="#">-인력관리제도</a></li>
+                    <li><a href="#">-급여,복리후생</a></li>
+                    <li><a href="#">-채용공고</a></li>
+                </ul>
+                <ul class="gow_sub">
+                    <li><a href="#">홍보센터</a></li>
+                    <li><a href="../sub/index.html">-공지사항</a></li>
+                    <li><a href="#">-보도자료</a></li>
+                    <li><a href="#">-홍보자료</a></li>
+                    <li><a href="#">-CI</a></li>
+                </ul>
+                <ul class="gow_sub">
+                    <li><a href="#">연차보고서</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="gnb_over_wrap g2">
+            <div class="gow_1">
+                <p>정보공개</p>
+                <img src="images/icon/header/cha_2.png" alt="이미지없음">
+            </div>
+            <div class="gow_2">
+                <ul class="gow_sub">
+                    <li><a href="#">정보공개청구</a></li>
+                    <li><a href="#">-정보공개제도안내</a></li>
+                    <li><a href="#">-정보공개청구</a></li>
+                    <li><a href="#">-정보목록</a></li>
+                </ul>
+                <ul class="gow_sub">
+                    <li><a href="#">사전정보공표</a></li>
+                    <li><a href="#">-사전정보 공표목록</a></li>
+                    <li><a href="#">-즐겨찾는 정보</a></li>
+                    <li><a href="#">-사전정보 모니터링</a></li>
+                </ul>
+                <ul class="gow_sub">
+                    <li><a href="#">경영공시</a></li>
+                    <li><a href="#">-경영공시목록</a></li>
+                    <li><a href="#">-일반현황</a></li>
+                    <li><a href="#">-기관운영</a></li>
+                    <li><a href="#">-주요사업및경영성과</a></li>
+                    <li><a href="#">-대내외평가</a></li>
+                    <li><a href="#">-기타</a></li>
+                </ul>
+                <ul class="gow_sub">
+                    <li><a href="#">사업실명제</a></li>
+                </ul>
+                <ul class="gow_sub">
+                    <li><a href="#">고속도로공공데이터포탈</a></li>
+                </ul>
+                <ul class="gow_sub">
+                    <li><a href="#">교통통계</a></li>
+                    <li><a href="#">-통계자료</a></li>
+                    <li><a href="#">-통계조회</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="gnb_over_wrap g3">
+            <div class="gow_1">
+                <p>국민참여</p>
+                <img src="images/icon/header/cha_3.png" alt="이미지없음">
+            </div>
+            <div class="gow_2">
+                <ul class="gow_sub">
+                    <li><a href="#">고객헌장</a></li>
+                </ul>
+                <ul class="gow_sub">
+                    <li><a href="#">고객의소리(민원)</a></li>
+                    <li><a href="#">-민원안내</a></li>
+                    <li><a href="#">-자주묻는질문</a></li>
+                    <li><a href="#">-민원목록</a></li>
+                    <li><a href="#">-민원신청</a></li>
+                    <li><a href="#">-나의민원</a></li>
+                    <li><a href="#">-직원칭찬</a></li>
+                    <li><a href="#">-토지보상안내</a></li>
+                    <li><a href="#">-유휴부지안내</a></li>
+                    <li><a href="#">-노면파손 피해배상 신청</a></li>
+                </ul>
+                <ul class="gow_sub">
+                    <li><a href="#">고객신고(신청)</a></li>
+                    <li><a href="#">-부패신고</a></li>
+                    <li><a href="#">-공익신고</a></li>
+                    <li><a href="#">-불공정하도급신고</a></li>
+                    <li><a href="#">-예산낭비신고</a></li>
+                    <li><a href="#">-유실물신고</a></li>
+                    <li><a href="#">-도로점용신청</a></li>
+                    <li><a href="#">-건설분쟁조정신청</a></li>
+                    <li><a href="#">-인사·채용비리신고센터</a></li>
+                </ul>
+                <ul class="gow_sub">
+                    <li><a href="#">고객제안</a></li>
+                    <li><a href="#">-고객아이디어</a></li>
+                    <li><a href="#">-민간제안사업</a></li>
+                    <li><a href="#">-국민참여설계</a></li>
+                </ul>
+                <ul class="gow_sub">
+                    <li><a href="#">기업성장응답센터</a></li>
+                    <li><a href="#">-기업성장응답센터 소개</a></li>
+                    <li><a href="#">-규제·애로 신고하기</a></li>
+                    <li><a href="#">-기업민원 보호·서비스 <br> 헌장</a></li>
+                </ul>
+                <ul class="gow_sub">
+                    <li><a href="#">국민소통</a></li>
+                    <li><a href="#">-콜센터</a></li>
+                    <li><a href="#">-터널방재안전교육</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="gnb_over_wrap g4">
+            <div class="gow_1">
+                <p>고속도로</p>
+                <img src="images/icon/header/cha_4.png" alt="이미지없음">
+            </div>
+            <div class="gow_2">
+                <ul class="gow_sub">
+                    <li><a href="#">도로정보</a></li>
+                    <li><a href="#">-도로의 종류</a></li>
+                    <li><a href="#">-도로 표지</a></li>
+                </ul>
+                <ul class="gow_sub">
+                    <li><a href="#">노선정보</a></li>
+                    <li><a href="#">-노선안내</a></li>
+                    <li><a href="#">-노선번호</a></li>
+                </ul>
+                <ul class="gow_sub">
+                    <li><a href="#">교통정보</a></li>
+                </ul>
+                <ul class="gow_sub">
+                    <li><a href="#">휴게소/영업소</a></li>
+                    <li><a href="#">-휴게소</a></li>
+                    <li><a href="#">-주유소</a></li>
+                    <li><a href="#">-영업소</a></li>
+                    <li><a href="#">-졸음쉼터</a></li>
+                    <li><a href="#">-EX-FOOD</a></li>
+                    <li><a href="#">-휴게소 창업매장</a></li>
+                </ul>
+                <ul class="gow_sub">
+                    <li><a href="#">통행요금</a></li>
+                    <li><a href="#">-통행요금조회</a></li>
+                    <li><a href="#">-통행요금제도</a></li>
+                    <li><a href="#">-하이패스 지원금 단말기</a></li>
+                    <li><a href="#">-미납통행료 납부안내</a></li>
+                    <li><a href="#">-공시송달</a></li>
+                </ul>
+                <ul class="gow_sub">
+                    <li><a href="#">교통안전</a></li>
+                    <li><a href="#">-교통법규</a></li>
+                    <li><a href="#">-사고예방 안전수칙</a></li>
+                    <li><a href="#">-버스전용차로</a></li>
+                    <li><a href="#">-지정차로</a></li>
+                    <li><a href="#">-운행제한</a></li>
+                    <li><a href="#">-제한최고속도</a></li>
+                    <li><a href="#">-국민행동요령</a></li>
+                    <li><a href="#">-교통센터</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="gnb_over_wrap g5">
+            <div class="gow_1">
+                <p>신기술</p>
+                <img src="images/icon/header/cha_5.png" alt="이미지없음">
+            </div>
+            <div class="gow_2">
+                <ul class="gow_sub">
+                    <li><a href="#">EX-기술나눔마당</a></li>
+                </ul>
+                <ul class="gow_sub">
+                    <li><a href="#">도로교통연구원</a></li>
+                </ul>
+                <ul class="gow_sub">
+                    <li><a href="#">기술마켓</a></li>
+                </ul>
+                <ul class="gow_sub">
+                    <li><a href="#">차세대 ITS</a></li>
+                </ul>
+                <ul class="gow_sub">
+                    <li><a href="#">도공JOB마켓</a></li>
+                </ul>
+                <ul class="gow_sub">
+                    <li><a href="#">LED 인증포탈</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="gnb_over_wrap g6">
+            <div class="gow_1">
+                <p>열린경영</p>
+                <img src="images/icon/header/cha_6.png" alt="이미지없음">
+            </div>
+            <div class="gow_2">
+                <ul class="gow_sub">
+                    <li><a href="#">ESG경영</a></li>
+                    <li><a href="#">-추진체계</a></li>
+                    <li><a href="#">-추진내용</a></li>
+                    <li><a href="#">-지속가능경영보고서</a></li>
+                    <li><a href="#">-ESG 채권 공시</a></li>
+                </ul>
+                <ul class="gow_sub">
+                    <li><a href="#">안전경영</a></li>
+                    <li><a href="#">-안전보건 경영방침</a></li>
+                    <li><a href="#">-안전경영 우수사례</a></li>
+                    <li><a href="#">-안전관리 등급제</a></li>
+                </ul>
+                <ul class="gow_sub">
+                    <li><a href="#">동반성장</a></li>
+                    <li><a href="#">-기술육성지원</a></li>
+                    <li><a href="#">-금융지원</a></li>
+                    <li><a href="#">-판로지원</a></li>
+                    <li><a href="#">-벤처지원</a></li>
+                    <li><a href="#">-기타지원</a></li>
+                </ul>
+                <ul class="gow_sub">
+                    <li><a href="#">사회공헌</a></li>
+                    <li><a href="#">-사회공헌 추진체계</a></li>
+                    <li><a href="#">-사회공헌 활동</a></li>
+                </ul>
+                <ul class="gow_sub">
+                    <li><a href="#">CP·윤리·인권 경영</a></li>
+                    <li><a href="#">-윤리경영</a></li>
+                    <li><a href="#">-인권경영</a></li>
+                    <li><a href="#">-컴플라이언스프로그램(CP)</a></li>
+                    <li></li>
+                    <li><a href="#">-주요활동(2016~)</a></li>
+                </ul>
+                <ul class="gow_sub">
+                    <li><a href="#">주요사업</a></li>
+                    <li><a href="#">-고속도로건설</a></li>
+                    <li><a href="#">-고속도로유지관리</a></li>
+                    <li><a href="#">-지능화고속도로</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="blank"></div>
+    <div id="content">
+        <div class="util_wrap">
+            <ul class="util">
+                <li class="u1">
+                    <input type="search">
+                    <button><img src="images/icon/util/search_button.png" alt="이미지없음"></button>
+                    <p>자주 찾으시는 검색어</p>
+                    <div class="pop_wrap2">
+                        <ul class="pop_wrap">
+                            <li><a href="#">#화물연대 운송거부 대체수송차량 통행료 환불</a></li>
+                            <li><a href="#">#교통 통계 조회</a></li>
+                            <li><a href="#">#통행료 조회</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="u2">
+                    <div class="call_wrap">
+                        <p><img src="images/icon/util/callcenter.png" alt="이미지없음"></p>
+                        <p>24시간 콜센터<br><span>1588-2504</span></p>
+                        <ul class="calltxt">
+                            <li>#24시간 연중무휴 운영</li>
+                            <li>#One Call, One Stop 시스템 운영</li>
+                            <li>#고객중심의 다양한 맞춤 서비스 제공</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="u3">
+                    <ul class="sns_wrap">
+                        <li><a href="#">
+                            <img src="images/icon/util/youtube.png" alt="이미지없음">
+                            <img src="images/icon/util/overyoutube.png" alt="이미지없음">
+                            <p>유튜브</p></a></li>
+                        <li><a href="#">
+                            <img src="images/icon/util/facebook.png" alt="이미지없음">
+                            <img src="images//icon/util/overfacebook.png" alt="이미지없음">
+                            <p>페이스북</p></a></li>
+                        <li><a href="#">
+                            <img src="images/icon/util/blog.png" alt="이미지없음">
+                            <img src="images/icon/util/overblog.png" alt="이미지없음">
+                            <p>네이버블로그</p></a></li>
+                        <li><a href="#">
+                            <img src="images/icon/util/post.png" alt="이미지없음">
+                            <img src="images/icon/util/overpost.png" alt="이미지없음">
+                            <p>네이버포스트</p></a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="util_tab">
+                <li class="util_here">검색</li>
+                <li>콜센터</li>
+                <li>SNS</li>
+            </ul>
+        </div>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><a href="#"><img src="images/banner/banner1.jpg" alt="이미지없음"></a></div>
+              <div class="swiper-slide"><a href="#"><img src="images/banner/banner2.jpg" alt="이미지없음"></a></div>
+              <div class="swiper-slide"><a href="#"><img src="images/banner/banner3.jpg" alt="이미지없음"></a></div>
+              <div class="swiper-slide"><a href="#"><img src="images/banner/banner4.jpg" alt="이미지없음"></a></div>
+              <div class="swiper-slide"><a href="#"><img src="images/banner/banner5.jpg" alt="이미지없음"></a></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-cursor">
+                <img src="images/icon/banner/clickcursor.png" alt="이미지없음">
+                드래그!
+            </div>
+        </div>
+        <div class="greenwrap">
+            <div class="greenwrap_inner">
+                <h1>교통</h1>
+                <ul class="g_icon">
+                    <li><a href="#">
+                        <img src="images/icon/greenbox/g_info.png" alt="이미지없음">
+                        <p>교통정보</p>
+                    </a></li>
+                    <li><a href="#">
+                        <img src="images/icon/greenbox/g_yebo.png" alt="이미지없음">
+                        <p>교통예보</p>
+                    </a></li>
+                    <li><a href="#">
+                        <img src="images/icon/greenbox/g_bs.png" alt="이미지없음">
+                        <p>교통방송</p>
+                    </a></li>
+                    <li><a href="#">
+                        <img src="images/icon/greenbox/g_safe.png" alt="이미지없음">
+                        <p>교통안전</p>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="greenwrap greenwrap2">
+            <div class="greenwrap_inner">
+                <h1>휴게소 · 통행료</h1>
+                <ul class="g_icon g_icon2">
+                    <li><a href="#">
+                        <div class="img_box">
+                            <img src="images/icon/greenbox/h_station.png" alt="이미지없음">
+                        </div>
+                        <p>휴게소/주유소</p>
+                    </a></li>
+                    <li><a href="#">
+                        <div class="img_box">
+                            <img src="images/icon/greenbox/h_office.png" alt="이미지없음">
+                        </div>
+                        <p>영업소</p>
+                    </a></li>
+                    <li><a href="#">
+                        <div class="img_box">
+                            <img src="images/icon/greenbox/h_sleep.png" alt="이미지없음">
+                        </div>
+                        <p>졸음쉼터</p>
+                    </a></li>
+                    <li><a href="#">
+                        <div class="img_box">
+                            <img src="images/icon/greenbox/h_cost.png" alt="이미지없음">
+                        </div>
+                        <p>통행요금</p>
+                    </a></li>
+                    <li><a href="#">
+                        <div class="img_box">
+                            <img src="images/icon/greenbox/h_minab.png" alt="이미지없음">
+                        </div>
+                        <p>미납통행료</p>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="notice_wrap">
+            <ul class="notice_title">
+                <li class="n_here">공지사항</li>
+                <li>보도자료</li>
+            </ul>
+            <ul class="ntxt_wrap n0">
+                <li>
+                    <p class="ntxt1">
+                    <a href="../sub2/index.html">· 한국도로공사 터널 방재인증센터 방재안전교육 신청 및 시험장 대여 안내</a>
+                    </p>
+                    <p class="ntxt2">
+                        01-31
+                    </p>
+                </li>
+                <li>
+                    <p class="ntxt1">
+                    <a href="#">· 2022년 하반기 신입(인턴)사원 공개채용 최종합격자 발표 및 안내</a>
+                    </p>
+                    <p class="ntxt2">
+                        12-28
+                    </p>
+                </li>
+                <li>
+                    <p class="ntxt1">
+                    <a href="#">· 고속도로 접도구역 토지매수 청구제도 안내</a>
+                    </p>
+                    <p class="ntxt2">
+                        12-27
+                    </p>
+                </li>
+                <li>
+                    <p class="ntxt1">
+                    <a href="#">· 포항-영덕간 북포항(영덕)영업소 등 2건 건축 설계공모 공고</a>
+                    </p>
+                    <p class="ntxt2">
+                        12-27
+                    </p>
+                </li>
+                <li>
+                    <p class="ntxt1">
+                    <a href="#">· 개인정보 목적 외 이용 및 제3자 제공 알림</a>
+                    </p>
+                    <p class="ntxt2">
+                        12-26
+                    </p>
+                </li>
+            </ul>
+            <ul class="ntxt_wrap n1">
+                <li>
+                    <p class="ntxt1">
+                    <a href="#">· 2023년, 새해의 시작은 '안전운전' 부터</a>
+                    </p>
+                    <p class="ntxt2">
+                        01-05
+                    </p>
+                </li>
+                <li>
+                    <p class="ntxt1">
+                    <a href="#">· 주유하면서 고속도로 미납 통행료 납부하세요</a>
+                    </p>
+                    <p class="ntxt2">
+                        12-28
+                    </p>
+                </li>
+                <li>
+                    <p class="ntxt1">
+                    <a href="#">· 한국도로공사, 고속도로 장학생 233명에게 장학금 7억원 전달</a>
+                    </p>
+                    <p class="ntxt2">
+                        12-26
+                    </p>
+                </li>
+                <li>
+                    <p class="ntxt1">
+                    <a href="#">· 한국도로공사가 선정한 올해 휴게소 대표음식은?</a>
+                    </p>
+                    <p class="ntxt2">
+                        12-23
+                    </p>
+                </li>
+                <li>
+                    <p class="ntxt1">
+                    <a href="#">· 경부고속도로 동이-옥천 확장공사 구간 12월 23일 개통</a>
+                    </p>
+                    <p class="ntxt2">
+                        12-22
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="greenwrap">
+            <div class="greenwrap_inner">
+                <h1>건설 · 기술</h1>
+                <ul class="g_icon">
+                    <li><a href="#">
+                        <img src="images/icon/greenbox/t_route.png" alt="이미지없음">
+                        <p>노선</p>
+                    </a></li>
+                    <li><a href="#">
+                        <img src="images/icon/greenbox/t_craft.png" alt="이미지없음">
+                        <p>건설</p>
+                    </a></li>
+                    <li><a href="#">
+                        <img src="images/icon/greenbox/t_care.png" alt="이미지없음">
+                        <p>유지관리</p>
+                    </a></li>
+                    <li><a href="#">
+                        <img src="images/icon/greenbox/t_sibang.png" alt="이미지없음">
+                        <p>전문시방서</p>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="oneclick_wrap">
+            <h1 class="box_title">EX-원클릭24</h1>
+            <ul class="oneicon1">
+                <li><a href="#"><img src="images/icon/oneclick/1.png" alt="이미지없음"><p>미납<br>통행료납부</p></a></li>
+                <li><a href="#"><img src="images/icon/oneclick/2.png" alt="이미지없음"><p>민원신청</p></a></li>
+                <li><a href="#"><img src="images/icon/oneclick/3.png" alt="이미지없음"><p>정보공개<br>청구</p></a></li>
+                <li><a href="#"><img src="images/icon/oneclick/4.png" alt="이미지없음"><p>직원칭찬</p></a></li>
+                <li><a href="#"><img src="images/icon/oneclick/5.png" alt="이미지없음"><p>아이디어<br>제안</p></a></li>
+                <li><a href="#"><img src="images/icon/oneclick/6.png" alt="이미지없음"><p>단말기 고객<br>직접등록</p></a></li>
+                <li><a href="#"><img src="images/icon/oneclick/7.png" alt="이미지없음"><p>국민소통</p></a></li>
+                <li><a href="#"><img src="images/icon/oneclick/8.png" alt="이미지없음"><p>공익신고</p></a></li>
+                <li><a href="#"><img src="images/icon/oneclick/9.png" alt="이미지없음"><p>부정부패<br>갑질신고</p></a></li>
+                <li><a href="#"><img src="images/icon/oneclick/10.png" alt="이미지없음"><p>청탁금지법<br>위반신고</p></a></li>
+                <li><a href="#"><img src="images/icon/oneclick/11.png" alt="이미지없음"><p>불공정<br>하도급신고</p></a></li>
+                <li><a href="#"><img src="images/icon/oneclick/12.png" alt="이미지없음"><p>안전신고</p></a></li>
+            </ul>
+            <ul class="oneicon1 oneicon2">
+                <li><a href="#"><img src="images/icon/oneclick/13.png" alt="이미지없음"><p>예산낭비<br>신고</p></a></li>
+                <li><a href="#"><img src="images/icon/oneclick/14.png" alt="이미지없음"><p>유실물<br>신고</p></a></li>
+                <li><a href="#"><img src="images/icon/oneclick/15.png" alt="이미지없음"><p>인사채용<br>비리신고</p></a></li>
+                <li><a href="#"><img src="images/icon/oneclick/16.png" alt="이미지없음"><p>규제애로<br>신고</p></a></li>
+                <li><a href="#"><img src="images/icon/oneclick/17.png" alt="이미지없음"><p>도로점용<br>신청</p></a></li>
+                <li><a href="#"><img src="images/icon/oneclick/18.png" alt="이미지없음"><p>토지보상<br>안내</p></a></li>
+                <li><a href="#"><img src="images/icon/oneclick/19.png" alt="이미지없음"><p>유휴부지<br>안내</p></a></li>
+                <li><a href="#"><img src="images/icon/oneclick/20.png" alt="이미지없음"><p>노면파손<br>배상안내</p></a></li>
+                <li><a href="#"><img src="images/icon/oneclick/21.png" alt="이미지없음"><p>운행제한<br>허가안내</p></a></li>
+                <li><a href="#"><img src="images/icon/oneclick/22.png" alt="이미지없음"><p>민간<br>제안사업</p></a></li>
+                <li><a href="#"><img src="images/icon/oneclick/23.png" alt="이미지없음"><p>기술<br>육성지원</p></a></li>
+                <li><a href="#"><img src="images/icon/oneclick/24.png" alt="이미지없음"><p>계약실적<br>증명신청</p></a></li>
+            </ul>
+            <button class="open_button"><img src="images/icon/oneclick/slidedownbutton.png" alt="이미지없음"></button>
+        </div>
+        <div class="new_wrap">
+            <h1 class="box_title"><span>고속도로의 미래</span> 신기술</h1>
+            <ul class="new_icon">
+                <li><a href="#"><img src="images/icon/new/1-1.png" alt="이미지없음"><img src="images/icon/new/1-2.png" alt="이미지없음"></a></li>
+                <li><a href="#"><img src="images/icon/new/2-1.png" alt="이미지없음"><img src="images/icon/new/2-2.png" alt="이미지없음"></a></li>
+                <li><a href="#"><img src="images/icon/new/3-1.png" alt="이미지없음"><img src="images/icon/new/3-2.png" alt="이미지없음"></a></li>
+                <li><a href="#"><img src="images/icon/new/4-1.png" alt="이미지없음"><img src="images/icon/new/4-2.png" alt="이미지없음"></a></li>
+                <li><a href="#"><img src="images/icon/new/5-1.png" alt="이미지없음"><img src="images/icon/new/5-2.png" alt="이미지없음"></a></li>
+            </ul>
+        </div>
+        <div class="open_wrap">
+            <h1 class="box_title">열린경영<br>
+                <span>윤리적 책임을 다함으로서 모든 이해관계자와 함께 성장 발전하여 신뢰받는 국민기업이 되겠습니다.</span>
+            </h1>
+            <ul class="open_content">
+                <li><a href="#"><img src="images/icon/open/1.jpg" alt="이미지없음"><p>ESG경영</p></a></li>
+                <li><a href="#"><img src="images/icon/open/2.jpg" alt="이미지없음"><p>사회공헌</p></a></li>
+                <li><a href="#"><img src="images/icon/open/3.jpg" alt="이미지없음"><p>윤리·인권 경영</p></a></li>
+                <li><a href="#"><img src="images/icon/open/4.jpg" alt="이미지없음"><p>주요사업</p></a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="footer_top_wrap">
+            <ul class="footer_top">
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">영상기기 운영관리방침</a></li>
+                <li><a href="#">이메일 집단 수집 거부</a></li>
+                <li><a href="#">찾아오시는 길</a></li>
+                <li><a href="#">배너방</a></li>
+                <li><a href="#">민자고속도로 바로가기</a></li>
+                <li>
+                    <p>한국도로공사 관련사이트 ▲</p>
+                    <ul class="friendsite">
+                        <li><a href="#">U-러닝센터</a></li>
+                        <li><a href="#">고속도로 통행료</a></li>
+                        <li><a href="#">유지관리CITIS</a></li>
+                        <li><a href="#">하이패스배구단</a></li>
+                        <li><a href="#">기술마켓</a></li>
+                        <li><a href="#">고속도로공공데이터포털</a></li>
+                        <li><a href="#">로드플러스</a></li>
+                        <li><a href="#">전자조달시스템</a></li>
+                        <li><a href="#">단말기등록(판매점,영업소)</a></li>
+                        <li><a href="#">한국도로공사서비스</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="footer_content_wrap">
+            <p><img src="images/icon/footer/f_logo.png" alt="이미지없음"></p>
+            <p>우) 39660 경상북도 김천시 혁신8로 77(율곡동, 한국도로공사) <br>
+                COPYRIGHT ⓒ 2014 Korea Expressway Corporation. All Rights reserved.</p>
+            <p><img src="images//icon/footer/f_logo2.png" alt="이미지없음"></p>
+            <p><img src="images//icon/footer/f_logo3.png" alt="이미지없음"></p>
+        </div>
+    </div>
+    <div id="popup">
+        <p>
+            배경 클릭후 <br><br>
+            gnb의 공사소개 > <br> 홍보센터 > 공지사항 을 클릭해주세요!
+        </p>
+        <p>배경 클릭후 <br><br>탭메뉴의 공지사항<br> 첫게시글을 클릭해주세요!</p>
+    </div>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            direction: 'horizontal',
+            loop: true,
+            autoplay : {  // 자동 슬라이드 설정 , 비 활성화 시 false
+            delay : 5000,   // 시간 설정
+            disableOnInteraction : false,  // false로 설정하면 스와이프 후 자동 재생이 비활성화 되지 않음
+            },
+            pagination: {
+            el: '.swiper-pagination',
+            clickable : true,
+            },
+        });
+    </script>
+</body>
+</html>
